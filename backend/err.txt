@@ -1,0 +1,22 @@
+node:events:505
+    throw er; // Unhandled 'error' event
+    ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:2390:16)
+    at listenInCluster (node:net:2499:12)
+    at Server.listen (node:net:2624:7)
+    at app.listen (C:\Users\ITG\Downloads\PVC-ERP\backend\node_modules\express\lib\application.js:635:24)
+    at file:///C:/Users/ITG/Downloads/PVC-ERP/backend/src/index.js:60:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:2478:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v26.13.0

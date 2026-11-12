@@ -1,0 +1,11 @@
+import { Router } from 'express';
+import { auth } from '../middleware.js';
+import { crud } from '../crud.js';
+const r = Router();
+r.use(auth);
+r.use(crud('stock'));
+r.use(crud('adjustments'));
+r.use(crud('transfers'));
+r.use(crud('counts'));
+r.use(crud('reports'));
+export default r;
